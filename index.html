@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O Bom Samaritano</title>
+  <link rel="shortcut icon" sizes="180x180" href="./assets/logoColorida2.png" type="image/x-icon">
+  <link rel="stylesheet" href="Style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR FIXA -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <img src="/assets/logo.png" alt="Logo CEBS" class="nav-logo">
+      <ul class="menu">
+        <li><a href="#">Início</a></li>
+        <li><a href="historia.html">Sobre</a></li>
+        <li><a href="#horarios">Horários</a></li>
+        <li><a href="#localizacao">Localização</a></li>
+        <li><a href="#livros">Estante</a></li>
+        <li><a href="#bazares">Bazares</a></li>
+      </ul>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-tag">BEM-VINDO À</span>
+      <h1>Centro Espírita<br><em>O Bom Samaritano</em></h1>
+      <p>Acolhimento, caridade e evolução espiritual.</p>
+        <div class="hero-botoes">
+            <a href="historia.html" class="btn-primary"><i class="fa-solid fa-dove"></i> Conheça nossa história</a>
+            <a href="#localizacao" class="btn-secondary"><i class="fa-solid fa-location-dot"></i> Como Chegar</a>
+        </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="scroll-hint">
+      <div class="mouse"><div class="wheel"></div></div>
+      <p>Role para baixo</p>
+    </div>
+
+    <!-- Transição para o conteúdo -->
+    <div class="hero-fade"></div>
+  </header>
+
+  <main>
+
+    <!-- HORÁRIOS -->
+    <section id="horarios">
+    <div class="secao-header">
+        <span class="secao-tag">AGENDA</span>
+        <h2>Horários de Atendimento</h2>
+        <div class="secao-linha"></div>
+    </div>
+    <div class="horarios-grid">
+        <div class="horario-card">
+            <i class="fa-regular fa-clock horario-icone"></i>
+            <span class="horario-dia">Segunda-feira</span>
+            <span class="horario-hora">19h30 – 20h30</span>
+            <span class="horario-desc">Grupo de Estudos</span>
+        </div>
+        <div class="horario-card">
+            <i class="fa-regular fa-clock horario-icone"></i>
+            <span class="horario-dia">Terça a Quinta</span>
+            <span class="horario-hora">19h – 21h45</span>
+            <span class="horario-desc">Atendimento fraterno, saúde, palestra e passes</span>
+        </div>
+        <div class="horario-card destaque">
+            <i class="fa-regular fa-clock horario-icone"></i>
+            <span class="horario-dia">Domingo</span>
+            <span class="horario-hora">10h - 11h</span>
+            <span class="horario-desc">Atendimento fraterno, palestra, passes e Evangelização Infantil</span>
+        </div>
+    </div>
+    </section>
+
+    <!-- BAZARES -->
+    <section id="bazares">
+      <div class="secao-header">
+        <span class="secao-tag">BENEFICENTE</span>
+        <h2>Calendário de Bazares 2026</h2>
+        <div class="secao-linha"></div>
+        <p class="secao-desc">Participe dos nossos bazares beneficentes! Toda a renda é revertida para a manutenção da Casa e ações de caridade.</p>
+      </div>
+
+      <div class="bazar-grid">
+        <div class="bazar-item"><div class="data-box"><span class="dia">11</span><span class="mes">ABR</span></div><span class="bazar-info">Sábado</span></div>
+        <div class="bazar-item"><div class="data-box"><span class="dia">09</span><span class="mes">MAI</span></div><span class="bazar-info">Sábado</span></div>
+        <div class="bazar-item"><div class="data-box"><span class="dia">06</span><span class="mes">JUN</span></div><span class="bazar-info">Sábado</span></div>
+        <div class="bazar-item"><div class="data-box"><span class="dia">11</span><span class="mes">JUL</span></div><span class="bazar-info">Sábado</span></div>
+        <div class="bazar-item"><div class="data-box"><span class="dia">08</span><span class="mes">AGO</span></div><span class="bazar-info">Sábado</span></div>
+        <div class="bazar-item"><div class="data-box"><span class="dia">12</span><span class="mes">SET</span></div><span class="bazar-info">Sábado</span></div>
+        <div class="bazar-item"><div class="data-box"><span class="dia">10</span><span class="mes">OUT</span></div><span class="bazar-info">Sábado</span></div>
+        <div class="bazar-item"><div class="data-box"><span class="dia">07</span><span class="mes">NOV</span></div><span class="bazar-info">Sábado</span></div>
+        <div class="bazar-item"><div class="data-box"><span class="dia">12</span><span class="mes">DEZ</span></div><span class="bazar-info">Sábado</span></div>
+      </div>
+    </section>
+
+    <!-- DOAÇÕES -->
+    <section id="doacoes">
+        <div class="secao-header">
+            <span class="secao-tag">CARIDADE</span>
+            <h2>Arrecadação de Alimentos</h2>
+            <div class="secao-linha"></div>
+            <p class="secao-desc">Ajude doando alimentos não perecíveis. Juntos fazemos a diferença!</p>
+            </div>
+        <div class="doacao-grid">
+            <ul class="doacao-lista">
+            <li><i class="fa-solid fa-circle-check"></i> Arroz</li>
+            <li><i class="fa-solid fa-circle-check"></i> Feijão Preto</li>
+            <li><i class="fa-solid fa-circle-check"></i> Feijão Branco</li>
+            <li><i class="fa-solid fa-circle-check"></i> Fubá</li>
+            <li><i class="fa-solid fa-circle-check"></i> Sal</li>
+            <li><i class="fa-solid fa-circle-check"></i> Vinagre</li>
+            <li><i class="fa-solid fa-circle-check"></i> Óleo</li>
+            <li><i class="fa-solid fa-circle-check"></i> Sardinha</li>
+            <li><i class="fa-solid fa-circle-check"></i> Farinha de Trigo</li>
+            </ul>
+            <ul class="doacao-lista">
+            <li><i class="fa-solid fa-circle-check"></i> Macarrão Spaguetti</li>
+            <li><i class="fa-solid fa-circle-check"></i> Macarrão diversos</li>
+            <li><i class="fa-solid fa-circle-check"></i> Tempero (ex: Arisco)</li>
+            <li><i class="fa-solid fa-circle-check"></i> Molho de tomate</li>
+            <li><i class="fa-solid fa-circle-check"></i> Açúcar</li>
+            <li><i class="fa-solid fa-circle-check"></i> Achocolatado</li>
+            <li><i class="fa-solid fa-circle-check"></i> Bolacha doce</li>
+            <li><i class="fa-solid fa-circle-check"></i> Bolacha salgada</li>
+            <li><i class="fa-solid fa-circle-check"></i> Farinhas diversas</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO -->
+    <section id="localizacao">
+        <div class="secao-header">
+            <span class="secao-tag">VENHA NOS VISITAR</span>
+            <h2>Onde Estamos</h2>
+            <div class="secao-linha"></div>
+        </div>
+        <div class="localizacao-container">
+            <div class="localizacao-card">
+                <h3>O Bom Samaritano</h3>
+                <p class="local-tipo">Centro Espírita</p>
+            <div class="local-info">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Av. Vicente Machado, 2657 — frente ao Seminário<br>Curitiba – PR, 80440-021</p>
+            </div>
+            <div class="local-info">
+                <i class="fa-regular fa-clock"></i>
+                <p>Seg a Qui: 19h – 21h45 | Dom: 10h – 11h</p>
+            </div>
+                <a href="https://maps.google.com/?q=O+Bom+Samaritano+Centro+Espirita+Curitiba" target="_blank" class="btn-maps">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Abrir no Google Maps
+                </a>
+            </div>
+            <div class="localizacao-mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.847866952185!2d-49.303572525629754!3d-25.443349233418154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce3459e415b43%3A0xcf9ca41c8cc7ff5d!2sO%20Bom%20Samaritano%20Centro%20Esp%C3%ADrita!5e0!3m2!1spt-BR!2sbr!4v1763142878681!5m2!1spt-BR!2sbr" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CONTATO -->
+    <section id="contato">
+        <div class="secao-header">
+            <span class="secao-tag">FALE CONOSCO</span>
+            <h2>Contato</h2>
+            <div class="secao-linha"></div>
+        </div>
+        <div class="contato-info">
+            <p><i class="fa-solid fa-phone"></i> <strong>(41) 99999-9999</strong></p>
+            <p><i class="fa-solid fa-envelope"></i> <strong>contato@obomsamaritano.com</strong></p>
+        </div>
+        <div class="redes-sociais">
+            <a href="https://www.instagram.com/centroespiritaobomsamaritano/" target="_blank" class="rede-btn instagram">
+            <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+            <a href="https://wa.me/5541999999999" target="_blank" class="rede-btn whatsapp">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- LIVROS -->
+    <section id="livros">
+      <div class="secao-header">
+        <span class="secao-tag">LEITURA</span>
+        <h2>Estante Espírita</h2>
+        <div class="secao-linha"></div>
+      </div>
+      <div class="livros-grid">
+        <div class="livro-card">
+          <img src="caminho/para/capa1.jpg" alt="Título do Livro 1">
+          <h3>Título do Livro 1</h3>
+          <a href="#" target="_blank">Ver detalhes</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Centro Espírita O Bom Samaritano &copy; 2026 — Todos os direitos reservados</p>
+  </footer>
+
+<script src="main.js" defer></script>
+
+</body>
+</html>
