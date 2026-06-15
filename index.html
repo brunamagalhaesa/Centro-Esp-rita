@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O Bom Samaritano</title>
+  <link rel="shortcut icon" sizes="180x180" href="./assets/logoColorida2.png" type="image/x-icon">
+  <link rel="stylesheet" href="Style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR FIXA -->
+<nav class="navbar">
+  <div class="nav-container">
+    <img src="/assets/logo.png" alt="Logo CEBS" class="nav-logo">
+
+    <div class="menu-btn" id="toggle" onclick="toggleMenu()">
+      <span class="hamburguer-1"></span>
+      <span class="hamburguer-2"></span>
+      <span class="hamburguer-3"></span>
+    </div>
+  </div>
+</nav>
+
+<div class="menu-lateral" id="menu-lateral">
+  <button class="menu-lateral-fechar" onclick="toggleMenu()">✕</button>
+  <nav>
+    <ul>
+      <li><a href="#" onclick="toggleMenu()">Início</a></li>
+      <li><a href="#timeline" onclick="toggleMenu()">Sobre</a></li>
+      <li><a href="#horarios" onclick="toggleMenu()">Horários</a></li>
+      <li><a href="#localizacao" onclick="toggleMenu()">Localização</a></li>
+      <li><a href="#livros" onclick="toggleMenu()">Leitura</a></li>
+      <li><a href="#bazares" onclick="toggleMenu()">Bazares</a></li>
+    </ul>
+  </nav>
+  <div class="menu-lateral-rodape">
+    <p>Centro Espírita</p>
+    <em>O Bom Samaritano</em>
+  </div>
+</div>
+<div class="menu-backdrop" id="menu-backdrop" onclick="toggleMenu()"></div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-tag">BEM-VINDO AO</span>
+    <h1>Centro Espírita<br><em>O Bom Samaritano</em></h1>
+    <p>Acolhimento, caridade e evolução espiritual.</p>
+    <div class="hero-botoes">
+      <a href="#horarios" class="btn-primary"><i class="fa-regular fa-clock"></i> Horários</a>
+      <a href="#localizacao" class="btn-secondary"><i class="fa-solid fa-location-dot"></i> Como Chegar</a>
+    </div>
+  </div>
+
+    <!-- Scroll hint -->
+    <div class="scroll-hint">
+      <div class="mouse"><div class="wheel"></div></div>
+      <p>Role para baixo</p>
+    </div>
+
+    <!-- Transição para o conteúdo -->
+    <div class="hero-fade"></div>
+  </header>
+
+  <main>
+
+    <!-- SOBRE -->
+    <section id="timeline">
+      <div class="secao-header">
+        <span class="secao-tag">SOBRE</span>
+        <h2>Nossa História</h2>
+        <div class="secao-linha"></div>
+      </div>
+
+      <div class="tl-wrap">
+        <div class="tl-track">
+
+          <div class="tl-item">
+            <div class="tl-year">1968</div>
+            <div class="tl-line-row">
+              <div class="tl-line"></div>
+              <svg class="tl-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M12 7 C10.5 4, 5 5, 5 9.5 C5 13, 9 16, 12 19" stroke-linecap="round" fill="none"/>
+                <path d="M12 7 C13.5 4, 19 5, 19 9.5 C19 13, 15 16, 12 19" stroke-linecap="round" fill="none"/>
+                <path d="M9 11 C10.5 9.5, 13.5 12.5, 15 11" stroke-linecap="round" fill="none"/>
+              </svg>
+              <div class="tl-line"></div>
+            </div>
+            <div class="tl-text">24/06 — Grupo de amigos reúne-se para estudar a Doutrina Espírita. Início do Centro Espírita O Bom Samaritano, na Rua Baltazar Carrasco dos Reis, Curitiba.</div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-year">1978</div>
+            <div class="tl-line-row">
+              <div class="tl-line"></div>
+              <svg class="tl-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M12 7 C10.5 4, 5 5, 5 9.5 C5 13, 9 16, 12 19" stroke-linecap="round" fill="none"/>
+                <path d="M12 7 C13.5 4, 19 5, 19 9.5 C19 13, 15 16, 12 19" stroke-linecap="round" fill="none"/>
+                <path d="M9 11 C10.5 9.5, 13.5 12.5, 15 11" stroke-linecap="round" fill="none"/>
+              </svg>
+              <div class="tl-line"></div>
+            </div>
+            <div class="tl-text">O CEBS muda para uma sede maior, na Rua Desembargador Westphalen.</div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-year">1979</div>
+            <div class="tl-line-row">
+              <div class="tl-line"></div>
+              <svg class="tl-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M12 7 C10.5 4, 5 5, 5 9.5 C5 13, 9 16, 12 19" stroke-linecap="round" fill="none"/>
+                <path d="M12 7 C13.5 4, 19 5, 19 9.5 C19 13, 15 16, 12 19" stroke-linecap="round" fill="none"/>
+                <path d="M9 11 C10.5 9.5, 13.5 12.5, 15 11" stroke-linecap="round" fill="none"/>
+              </svg>
+              <div class="tl-line"></div>
+            </div>
+            <div class="tl-text">Para aumentar a capacidade e qualidade do atendimento, muda-se para nova sede dentro da Faculdade Espírita do Paraná.</div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-year">1980</div>
+            <div class="tl-line-row">
+              <div class="tl-line"></div>
+              <svg class="tl-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M12 7 C10.5 4, 5 5, 5 9.5 C5 13, 9 16, 12 19" stroke-linecap="round" fill="none"/>
+                <path d="M12 7 C13.5 4, 19 5, 19 9.5 C19 13, 15 16, 12 19" stroke-linecap="round" fill="none"/>
+                <path d="M9 11 C10.5 9.5, 13.5 12.5, 15 11" stroke-linecap="round" fill="none"/>
+              </svg>
+              <div class="tl-line"></div>
+            </div>
+            <div class="tl-text">Os médiuns começam a organizar eventos para arrecadação de fundos, voltados à manutenção da casa e assistência social.</div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-year">1988</div>
+            <div class="tl-line-row">
+              <div class="tl-line"></div>
+              <svg class="tl-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M12 7 C10.5 4, 5 5, 5 9.5 C5 13, 9 16, 12 19" stroke-linecap="round" fill="none"/>
+                <path d="M12 7 C13.5 4, 19 5, 19 9.5 C19 13, 15 16, 12 19" stroke-linecap="round" fill="none"/>
+                <path d="M9 11 C10.5 9.5, 13.5 12.5, 15 11" stroke-linecap="round" fill="none"/>
+              </svg>
+              <div class="tl-line"></div>
+            </div>
+            <div class="tl-text">A Casa passa a realizar atendimento quase todos os dias da semana. Marina Zanatta assume a diretoria do CEBS.</div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-year">2010</div>
+            <div class="tl-line-row">
+              <div class="tl-line"></div>
+              <svg class="tl-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M12 7 C10.5 4, 5 5, 5 9.5 C5 13, 9 16, 12 19" stroke-linecap="round" fill="none"/>
+                <path d="M12 7 C13.5 4, 19 5, 19 9.5 C19 13, 15 16, 12 19" stroke-linecap="round" fill="none"/>
+                <path d="M9 11 C10.5 9.5, 13.5 12.5, 15 11" stroke-linecap="round" fill="none"/>
+              </svg>
+              <div class="tl-line"></div>
+            </div>
+            <div class="tl-text">Criação do atendimento voltado especificamente para a saúde.</div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-year">2020</div>
+            <div class="tl-line-row">
+              <div class="tl-line"></div>
+              <svg class="tl-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M12 7 C10.5 4, 5 5, 5 9.5 C5 13, 9 16, 12 19" stroke-linecap="round" fill="none"/>
+                <path d="M12 7 C13.5 4, 19 5, 19 9.5 C19 13, 15 16, 12 19" stroke-linecap="round" fill="none"/>
+                <path d="M9 11 C10.5 9.5, 13.5 12.5, 15 11" stroke-linecap="round" fill="none"/>
+              </svg>
+              <div class="tl-line"></div>
+            </div>
+            <div class="tl-text">Atendimentos suspensos em função da Pandemia.</div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-year">2021</div>
+            <div class="tl-line-row">
+              <div class="tl-line"></div>
+              <svg class="tl-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M12 7 C10.5 4, 5 5, 5 9.5 C5 13, 9 16, 12 19" stroke-linecap="round" fill="none"/>
+                <path d="M12 7 C13.5 4, 19 5, 19 9.5 C19 13, 15 16, 12 19" stroke-linecap="round" fill="none"/>
+                <path d="M9 11 C10.5 9.5, 13.5 12.5, 15 11" stroke-linecap="round" fill="none"/>
+              </svg>
+              <div class="tl-line"></div>
+            </div>
+            <div class="tl-text">O CEBS reabre suas portas para atendimento ao público, com os devidos cuidados.</div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-year">2023</div>
+            <div class="tl-line-row">
+              <div class="tl-line"></div>
+              <svg class="tl-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M12 7 C10.5 4, 5 5, 5 9.5 C5 13, 9 16, 12 19" stroke-linecap="round" fill="none"/>
+                <path d="M12 7 C13.5 4, 19 5, 19 9.5 C19 13, 15 16, 12 19" stroke-linecap="round" fill="none"/>
+                <path d="M9 11 C10.5 9.5, 13.5 12.5, 15 11" stroke-linecap="round" fill="none"/>
+              </svg>
+              <div class="tl-line"></div>
+            </div>
+            <div class="tl-text">O Centro abre aos domingos, oferecendo palestras à comunidade.</div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-year">2024</div>
+            <div class="tl-line-row">
+              <div class="tl-line"></div>
+              <svg class="tl-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M12 7 C10.5 4, 5 5, 5 9.5 C5 13, 9 16, 12 19" stroke-linecap="round" fill="none"/>
+                <path d="M12 7 C13.5 4, 19 5, 19 9.5 C19 13, 15 16, 12 19" stroke-linecap="round" fill="none"/>
+                <path d="M9 11 C10.5 9.5, 13.5 12.5, 15 11" stroke-linecap="round" fill="none"/>
+              </svg>
+              <div class="tl-line"></div>
+            </div>
+            <div class="tl-text">Início dos atendimentos na nova sede, na Av. Vicente Machado. Início do grupo infantil "Minutinhos com Jesus". Sala da saúde recebe o nome “Mosara Bento”, em homenagem à esta médium tão querida, que desencarnou em 2021.</div>
+          </div>
+
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 32px;">
+        <a href="historia.html" class="btn-outline">
+          <i class="fa-solid fa-route"></i> Conheça nossa trajetória completa
+        </a>
+      </div>
+
+    </section>
+
+        <!-- BANNERS -->
+    <section class="banners">
+      <div class="secao-header">
+        <span class="secao-tag">FIQUE POR DENTRO</span>
+        <h2>Avisos e Eventos</h2>
+        <div class="secao-linha"></div>
+      </div>
+
+      <div class="banners-wrap" id="bannersWrap">
+        <div class="banners-track" id="bannersTrack">
+          <img src="/assets/bannerBazar.jpeg" alt="Banner 1" class="banner-item">
+          <img src="/assets/bannerAlimentos.jpeg" alt="Banner 2" class="banner-item">
+          <img src="/assets/bannerContribuicao.jpeg" alt="Banner 3" class="banner-item">
+          <img src="/assets/bannerEstudos.jpeg" alt="Banner 4" class="banner-item">
+          <img src="/assets/bannerMinutinhos.jpeg" alt="Banner 5" class="banner-item">
+        </div>
+      </div>
+      <div class="banners-dots" id="bannersDots"></div>
+    </section>
+
+    <!-- HORÁRIOS -->
+    <section id="horarios">
+      <div class="secao-header">
+          <span class="secao-tag">AGENDA</span>
+          <h2>Horários de Atendimento</h2>
+          <div class="secao-linha"></div>
+      </div>
+      <div class="horarios-grid">
+          <div class="horario-card">
+              <i class="fa-regular fa-clock horario-icone"></i>
+              <span class="horario-dia">Segunda-feira</span>
+              <span class="horario-hora">19h30 – 20h30</span>
+              <span class="horario-desc">Grupo de Estudos</span>
+          </div>
+          <div class="horario-card">
+              <i class="fa-regular fa-clock horario-icone"></i>
+              <span class="horario-dia">Terça a Quinta</span>
+              <span class="horario-hora">19h – 21h45</span>
+              <span class="horario-desc">Atendimento fraterno, saúde, palestra e passes</span>
+          </div>
+          <div class="horario-card destaque">
+              <i class="fa-regular fa-clock horario-icone"></i>
+              <span class="horario-dia">Domingo</span>
+              <span class="horario-hora">10h - 11h</span>
+              <span class="horario-desc">Atendimento fraterno, palestra, passes e Evangelização Infantil</span>
+          </div>
+      </div>
+    </section>
+
+    <!-- BAZARES -->
+    <section id="bazares">
+      <div class="secao-header">
+        <span class="secao-tag">BENEFICENTE</span>
+        <h2>Calendário de Bazares 2026</h2>
+        <div class="secao-linha"></div>
+        <p class="secao-desc">Participe dos nossos bazares beneficentes! Toda a renda é revertida para a manutenção da Casa e ações de caridade.</p>
+      </div>
+
+      <div class="bazar-grid">
+        <div class="bazar-item"><div class="data-box"><span class="dia">11</span><span class="mes">JUL</span></div><span class="bazar-info">Sábado</span></div>
+        <div class="bazar-item"><div class="data-box"><span class="dia">08</span><span class="mes">AGO</span></div><span class="bazar-info">Sábado</span></div>
+        <div class="bazar-item"><div class="data-box"><span class="dia">12</span><span class="mes">SET</span></div><span class="bazar-info">Sábado</span></div>
+        <div class="bazar-item"><div class="data-box"><span class="dia">10</span><span class="mes">OUT</span></div><span class="bazar-info">Sábado</span></div>
+        <div class="bazar-item"><div class="data-box"><span class="dia">07</span><span class="mes">NOV</span></div><span class="bazar-info">Sábado</span></div>
+        <div class="bazar-item"><div class="data-box"><span class="dia">12</span><span class="mes">DEZ</span></div><span class="bazar-info">Sábado</span></div>
+      </div>
+    </section>
+
+    <!-- DOAÇÕES -->
+    <section id="doacoes">
+        <div class="secao-header">
+            <span class="secao-tag">CARIDADE</span>
+            <h2>Arrecadação de Alimentos</h2>
+            <div class="secao-linha"></div>
+            <p class="secao-desc">Ajude doando alimentos não perecíveis. Juntos fazemos a diferença!</p>
+            </div>
+        <div class="doacao-grid">
+            <ul class="doacao-lista">
+            <li><i class="fa-solid fa-circle-check"></i> Arroz</li>
+            <li><i class="fa-solid fa-circle-check"></i> Feijão Preto</li>
+            <li><i class="fa-solid fa-circle-check"></i> Feijão Branco</li>
+            <li><i class="fa-solid fa-circle-check"></i> Fubá</li>
+            <li><i class="fa-solid fa-circle-check"></i> Sal</li>
+            <li><i class="fa-solid fa-circle-check"></i> Vinagre</li>
+            <li><i class="fa-solid fa-circle-check"></i> Óleo</li>
+            <li><i class="fa-solid fa-circle-check"></i> Sardinha</li>
+            <li><i class="fa-solid fa-circle-check"></i> Farinha de Trigo</li>
+            </ul>
+            <ul class="doacao-lista">
+            <li><i class="fa-solid fa-circle-check"></i> Macarrão Spaguetti</li>
+            <li><i class="fa-solid fa-circle-check"></i> Macarrão diversos</li>
+            <li><i class="fa-solid fa-circle-check"></i> Tempero (ex: Arisco)</li>
+            <li><i class="fa-solid fa-circle-check"></i> Molho de tomate</li>
+            <li><i class="fa-solid fa-circle-check"></i> Açúcar</li>
+            <li><i class="fa-solid fa-circle-check"></i> Achocolatado</li>
+            <li><i class="fa-solid fa-circle-check"></i> Bolacha doce</li>
+            <li><i class="fa-solid fa-circle-check"></i> Bolacha salgada</li>
+            <li><i class="fa-solid fa-circle-check"></i> Farinhas diversas</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO -->
+    <section id="localizacao">
+        <div class="secao-header">
+            <span class="secao-tag">VENHA NOS VISITAR</span>
+            <h2>Onde Estamos</h2>
+            <div class="secao-linha"></div>
+        </div>
+        <div class="localizacao-container">
+            <div class="localizacao-card">
+                <h3>O Bom Samaritano</h3>
+                <p class="local-tipo">Centro Espírita</p>
+            <div class="local-info">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Av. Vicente Machado, 2657 — frente ao Seminário<br>Curitiba – PR, 80440-021</p>
+            </div>
+            <div class="local-info">
+                <i class="fa-regular fa-clock"></i>
+                <p>Seg a Qui: 19h – 21h45 | Dom: 10h – 11h</p>
+            </div>
+                <a href="https://maps.google.com/?q=O+Bom+Samaritano+Centro+Espirita+Curitiba" target="_blank" class="btn-maps">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Abrir no Google Maps
+                </a>
+            </div>
+            <div class="localizacao-mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.847866952185!2d-49.303572525629754!3d-25.443349233418154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce3459e415b43%3A0xcf9ca41c8cc7ff5d!2sO%20Bom%20Samaritano%20Centro%20Esp%C3%ADrita!5e0!3m2!1spt-BR!2sbr!4v1763142878681!5m2!1spt-BR!2sbr" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CONTATO -->
+    <section id="contato">
+        <div class="secao-header">
+            <span class="secao-tag">REDES SOCIAIS</span>
+            <h2>Siga-nos e Acompanhe Nossos Eventos</h2>
+            <div class="secao-linha"></div>
+        </div>
+
+          <div class="redes-sociais">
+            <a href="https://www.instagram.com/centroespiritaobomsamaritano/" target="_blank" class="rede-btn instagram">
+              <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+            <!--<a href="https://wa.me/5541999999999" target="_blank" class="rede-btn whatsapp">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp -->
+            </a>
+            <a href="https://www.youtube.com/@CentroEspiritaOBomSamaritano" target="_blank" class="rede-btn youtube">
+              <i class="fa-brands fa-youtube"></i> YouTube
+            </a>
+          </div>
+    </section>
+
+    <!-- ESTUDO E REFLEXÃO -->
+    <section id="livros">
+      <div class="secao-header">
+        <span class="secao-tag">LEITURA E ESTUDO</span>
+        <h2>Estudo e Reflexão</h2>
+        <div class="secao-linha"></div>
+        <p class="secao-desc">Palestras gravadas e textos para reflexão e aprofundamento espiritual.</p>
+      </div>
+
+      <div class="estudo-bloco">
+        <h3 class="estudo-subtitulo">
+          <i class="fa-brands fa-youtube"></i> Palestras Gravadas
+        </h3>
+        <div class="palestras-grid">
+          <a href="https://www.youtube.com/watch?v=eqhCvU7IHo0&t=45s" target="_blank" class="palestra-card">
+            <div class="palestra-thumb">
+              <img src="https://img.youtube.com/vi/eqhCvU7IHo0/hqdefault.jpg" alt="Capa da palestra 1">
+              <i class="fa-solid fa-play palestra-play"></i>
+            </div>
+            <div class="palestra-info">
+              <h4>O Evangelho Segundo o Espiritismo</h4>
+              <span>Assistir no YouTube</span>
+            </div>
+          </a>
+
+          <a href="https://www.youtube.com/watch?v=TpUQsKMAeQ0" target="_blank" class="palestra-card">
+            <div class="palestra-thumb">
+              <img src="https://img.youtube.com/vi/TpUQsKMAeQ0/hqdefault.jpg" alt="Capa da palestra 1">
+              <i class="fa-solid fa-play palestra-play"></i>
+            </div>
+            <div class="palestra-info">
+              <h4>Nossas Preocupações Perante a Eternidade</h4>
+              <span>Assistir no YouTube</span>
+            </div>
+          </a>
+
+          <a href="https://www.youtube.com/watch?v=26f2qOvEmok" target="_blank" class="palestra-card">
+            <div class="palestra-thumb">
+              <img src="https://img.youtube.com/vi/26f2qOvEmok/hqdefault.jpg" alt="Capa da palestra 1">
+              <i class="fa-solid fa-play palestra-play"></i>
+            </div>
+            <div class="palestra-info">
+              <h4>Reforma Íntima</h4>
+              <span>Assistir no YouTube</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="estudo-bloco">
+        <h3 class="estudo-subtitulo">
+          <i class="fa-solid fa-feather"></i> Textos para Reflexão
+        </h3>
+        <div class="textos-grid">
+          <div class="texto-card">
+            <p class="texto-trecho">
+              "⁠Cada dor, cada luta, cada sofrimento tem sua razão de ser na justiça perfeitíssima de Deus."
+            </p>
+            <span class="texto-fonte">— Zíbia Gasparetto</span>
+          </div>
+
+          <div class="texto-card">
+            <p class="texto-trecho">
+              "Deus nos concede, a cada dia, uma página de vida nova no livro do tempo. Aquilo que colocarmos nela, corre por nossa conta."
+            </p>
+            <span class="texto-fonte">— Chico Xavier</span>
+            </a>
+          </div>
+
+          <div class="texto-card">
+            <p class="texto-trecho">
+              "Vive de tal forma que deixes pegadas luminosas no caminho percorrido, como estrelas apontando o rumo da felicidade e não deixes ninguém afastar-se de ti sem que leve um traço de bondade, ou um sinal de paz da tua vida."
+            </p>
+            <span class="texto-fonte">— Joanna de Ângelis</span>     
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Centro Espírita O Bom Samaritano &copy; 2026 — Todos os direitos reservados</p>
+  </footer>
+
+<script src="main.js" defer></script>
+
+</body>
+</html>
