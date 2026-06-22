@@ -194,6 +194,54 @@ if (bannersWrap && bannersTrack) {
     bannersTrack.style.transform = `translateX(calc(-${atual * 100}% + ${diff}px))`;
   });
 
+  const modal = document.getElementById('modalLivro');
+  const modalTitulo = document.getElementById('modalTitulo');
+  const modalResenha = document.getElementById('modalResenha');
+  const fechar = document.querySelector('.fechar-modal');
+
+  document.querySelectorAll('.btn-resenha').forEach(botao => {
+
+    botao.addEventListener('click', () => {
+
+      modalTitulo.textContent =
+        botao.dataset.titulo;
+
+      modalResenha.textContent =
+        botao.dataset.resenha;
+
+      modal.style.display = 'flex';
+    });
+
+  });
+
+  fechar.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  window.addEventListener('click', (e) => {
+
+    if(e.target === modal){
+      modal.style.display = 'none';
+    }
+
+  });
+
+  const grid = document.getElementById("livrosGrid");
+  const botao = document.getElementById("toggleLivros");
+
+  botao.addEventListener("click", () => {
+
+    grid.classList.toggle("expandido");
+
+    if(grid.classList.contains("expandido")){
+      botao.textContent = "Ver menos";
+    } else {
+      botao.textContent = "Ver mais livros";
+    }
+
+  });
+
+
   // SUPORTE A TOUCH (MOBILE)
   bannersWrap.addEventListener('touchstart', (e) => {
     pausarAutoplay();

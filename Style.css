@@ -1087,6 +1087,246 @@ section {
   gap: 10px;
 }
 
+/* ===== BIBLIOTECA ===== */
+
+.livros-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+  margin-top:40px;
+}
+
+.livro-card{
+  background:#fff;
+  border-radius:20px;
+  padding:20px;
+  text-align:center;
+
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+  transition:.3s ease;
+}
+
+.livro-card:hover{
+  transform:translateY(-6px);
+}
+
+.livro-card img{
+  width:100%;
+  height:280px;
+  object-fit:contain;
+  margin-bottom:15px;
+}
+
+.livro-card h3{
+  font-size:1rem;
+  min-height:50px;
+  color:#31594d;
+}
+
+.btn-resenha{
+  margin-top:10px;
+  border:none;
+  padding:10px 18px;
+  border-radius:30px;
+  cursor:pointer;
+
+  background:#d8ece5;
+  color:#31594d;
+
+  transition:.3s;
+}
+
+.btn-resenha:hover{
+  transform:scale(1.05);
+}
+
+.modal-livro{
+  display:none;
+  position:fixed;
+  inset:0;
+
+  background:rgba(0,0,0,.55);
+
+  justify-content:center;
+  align-items:center;
+
+  z-index:9999;
+  padding:20px;
+}
+
+.modal-conteudo{
+  background:#fff;
+
+  width:100%;
+  max-width:700px;
+
+  padding:30px;
+
+  border-radius:20px;
+
+  max-height:80vh;
+  overflow-y:auto;
+}
+
+.fechar-modal{
+  float:right;
+  font-size:30px;
+  cursor:pointer;
+}
+
+#modalTitulo{
+  margin-bottom:20px;
+  color:#31594d;
+}
+
+#modalResenha{
+  line-height:1.8;
+  color:#555;
+}
+
+/* ===== ESCONDER ===== */
+.livros-container{
+position: relative;
+margin-top: 40px;
+}
+
+.livros-grid{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 25px;
+
+max-height: 700px;
+overflow: hidden;
+
+transition: max-height .8s ease;
+}
+
+.livros-grid.expandido{
+max-height: 5000px;
+}
+
+/* Card do livro */
+.livro-card{
+background: #fff;
+border-radius: 20px;
+padding: 20px;
+text-align: center;
+
+box-shadow: 0 10px 25px rgba(0,0,0,.08);
+
+transition: .3s ease;
+}
+
+.livro-card{
+transform: translateY(-6px);
+}
+
+.livro-card img{
+width: 100%;
+height: 280px;
+object-fit: contain;
+margin-bottom: 15px;
+}
+
+.livro-card h3{
+font-size: 1rem;
+min-height: 50px;
+color: #31594d;
+margin-bottom: 15px;
+}
+
+/* Botão de resenha */
+.btn-resenha{
+border: none;
+padding: 10px 18px;
+border-radius: 30px;
+cursor: pointer;
+
+background: #d8ece5;
+color: #31594d;
+
+transition: .3s;
+}
+
+.btn-resenha{
+transform: scale(1.05);
+}
+
+/* Gradiente indicando mais conteúdo */
+.fade-livros{
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
+
+height: 120px;
+
+background: linear-gradient(
+to bottom,
+rgba(255,255,255,0),
+rgba(255,255,255,1)
+);
+
+pointer-events: none;
+transition: .4s ease;
+}
+
+.fade-livros.oculto{
+opacity: 0;
+}
+
+/* Botão Ver Mais */
+.btn-ver-mais{
+display: block;
+
+margin: 35px auto 0;
+
+border: none;
+cursor: pointer;
+
+padding: 14px 28px;
+
+border-radius: 999px;
+
+background: #d8ece5;
+color: #31594d;
+
+font-size: 1rem;
+font-weight: 600;
+
+transition: .3s;
+}
+
+.btn-ver-mais{
+transform: translateY(-2px);
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+.livros-grid{
+grid-template-columns: repeat(2, 1fr);
+gap: 15px;
+
+max-height: 620px;
+
+}
+
+.livro-card{
+padding: 15px;
+}
+
+.livro-card img{
+height: 220px;
+}
+
+.livro-card h3{
+font-size: .9rem;
+}
+
+}
+
 /* ===== FOOTER ===== */
 footer {
   text-align: center;
