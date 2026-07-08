@@ -727,7 +727,7 @@ section {
   line-height: 1.5;
 }
 
-/* ===== BAZARES ===== */
+/* ===== BAZAR ===== */
 .bazar-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -748,6 +748,15 @@ section {
 
 .bazar-item:hover {
   transform: translateY(-3px);
+}
+
+#bazares .secao-header em {
+    display: block;          
+    margin-top: 12px;        
+    font-size: 0.95rem;      
+    color: #666;             
+    font-style: italic;      
+    text-align: center;      
 }
 
 .data-box {
